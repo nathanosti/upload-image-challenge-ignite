@@ -14,6 +14,7 @@ interface ModalAddImageProps {
   onClose: () => void;
 }
 
+
 export function ModalAddImage({
   isOpen,
   onClose,
@@ -27,9 +28,7 @@ export function ModalAddImage({
       <ModalOverlay />
       <ModalContent bgColor="pGray.900">
         <ModalHeader fontSize="4xl">Nova imagem</ModalHeader>
-
         <ModalCloseButton />
-
         <ModalBody px={60}>
           <FormAddImage closeModal={handleCloseModal} />
         </ModalBody>
